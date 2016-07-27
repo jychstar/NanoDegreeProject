@@ -1,0 +1,34 @@
+
+.p{
+	width: 600px;
+}
+img{
+	/*   width:200px;*/
+	height:250px;*/
+	/*		height: 2%;*/
+}
+.doing{
+	color: green;
+	/*	max-width: 705px;*/
+}
+.thinking{
+	background-color: cornsilk;
+}
+
+
+* {
+	/*	outline: 2px solid blue !important;*/
+}
+
+
+* {
+	/*	-webkit-box-sizing: border-box;*/
+	/*	-moz-box-sizing: border-box;*/
+	/*	-ms-box-sizing: border-box;*/
+	box-sizing: border-box;*/
+
+}
+
+.img {
+	display: flex;
+}
