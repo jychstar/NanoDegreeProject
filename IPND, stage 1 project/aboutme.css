@@ -1,31 +1,29 @@
-
-.p{
-	width: 600px;
+.headline{
+	color: red;
 }
+.headline2{
+	color: blue;
+}
+
 img{
 	/*   width:200px;*/
-	height:250px;*/
-	/*		height: 2%;*/
+	height:250px;
 }
-.doing{
-	color: green;
-	/*	max-width: 705px;*/
-}
-.thinking{
+
+p{
 	background-color: cornsilk;
 }
 
 
 * {
-	/*	outline: 2px solid blue !important;*/
+/*		outline: 2px solid silver !important;*/
 }
-
 
 * {
 	/*	-webkit-box-sizing: border-box;*/
 	/*	-moz-box-sizing: border-box;*/
 	/*	-ms-box-sizing: border-box;*/
-	box-sizing: border-box;*/
+	box-sizing: border-box;
 
 }
 
