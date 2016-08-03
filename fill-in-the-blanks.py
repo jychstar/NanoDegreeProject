@@ -18,7 +18,7 @@
 # There should be 3 levels with 4 blanks each. The player will first choose a level to play, and then each time the player enter an answer for a blank. If the answer is correct, then continue to the next blank; if not, the player will be asked to enter again.
 
 blanks  = ["___1___","___2___", "___3___", "___4___"]
-sample1 = '''A ___1___ is created with the def keyword. You specify the inputs a ___1___ takes by adding ___2___ separated by commas between the parentheses. ___1___s by default return ___3___ if you don't specify the value to return. ___2___ can be standard data types such as string, number, dictionary, tuple, and ___4___ or can be more complicated such as objects and lambda functions.'''
+sample1 = '''A ___1___ is created with the def keyword. You specify the inputs a ___1___ takes by adding ___2___ separated by commas between the parentheses. A ___1___ by default returns ___3___ if you don't specify the value to return. ___2___ can be standard data types such as string, number, dictionary, tuple, and ___4___ or can be more complicated such as objects and lambda functions.'''
 answer1=["function", "variables","None","list"]
 
 sample2="___1___ intelligence is intelligence exhibited by machines. In ___2___ science, an ideal intelligent machine is a flexible rational agent that perceives its environment and takes actions that maximize its chance of success at some goal.Colloquially, the term ___1___ is applied when a machine mimics ___3___ functions that humans associate with other human minds, such as ___4___ and problem solving."
@@ -30,7 +30,10 @@ answer3=["Emotional","recognize","discriminate","label"]
 # Plays a full game of Fill-in-the-Blanks. The player will first choose a level to play, and then each time the player enter an answer for a blank. If the answer is correct, then continue to the next blank; if not, the player will be asked to enter again.
 
 def start_game():
+    """ choose a level to start game """
     user_input = raw_input("choose level: 1, 2, or 3? ")
+    while user_input not in ["1","2","3"]:
+        user_input=raw_input("incorrect value, please try again")
     if user_input=="1":
         result=play_game(sample1,answer1)
     if user_input=="2":
@@ -40,15 +43,19 @@ def start_game():
     return result
 
 def play_game(sample, answer):
-    print sample
     # print answer # for debugging purpose
     i=0 # indicate the sequenc of blanks
-    user_input=None  #initiate user_input
     for word in answer: # loop over all answers
+        print sample # hint for input
+        user_input = raw_input("Type in " + blanks[i] +":")
         while user_input !=word: # keep looping until the anwwer is right
-            user_input = raw_input("Type in " + blanks[i] + ", or  quit to give up:")
+            user_input = raw_input("Incorrect, try again. Type in " + blanks[i] + ", or  quit to give up:")
             if user_input=="quit": # exit mechanism
                 return "Good luck next time~"
+        if user_input==word:
+            print "You are right~ \n"
+            sample=sample.replace(blanks[i],word)
         i=i+1
-    return  "congratulations, you win!" 
+    print sample
+    return  "congratulations, you win!"
 print start_game()
