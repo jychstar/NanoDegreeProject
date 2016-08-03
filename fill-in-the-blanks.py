@@ -36,13 +36,14 @@ def start_game():
         user_input=raw_input("incorrect value, please try again")
     if user_input=="1":
         result=play_game(sample1,answer1)
-    if user_input=="2":
+    elif user_input=="2":
         result=play_game(sample2,answer2)
-    if user_input=="3":
+    elif user_input=="3":
         result=play_game(sample3,answer3)
     return result
 
 def play_game(sample, answer):
+    """play game with chosen level"""
     # print answer # for debugging purpose
     i=0 # indicate the sequenc of blanks
     for word in answer: # loop over all answers
