@@ -15,44 +15,40 @@
 
 # To help you get started, we've provided a sample paragraph that you can use when testing your code.
 # Your game should consist of 3 or more levels, so you should add your own paragraphs as well!
+# There should be 3 levels with 4 blanks each. The player will first choose a level to play, and then each time the player enter an answer for a blank. If the answer is correct, then continue to the next blank; if not, the player will be asked to enter again.
 
-sample = '''A ___1___ is created with the def keyword. You specify the inputs a ___1___ takes by
-adding ___2___ separated by commas between the parentheses. ___1___s by default return ___3___ if you
-don't specify the value to return. ___2___ can be standard data types such as string, number, dictionary,
-tuple, and ___4___ or can be more complicated such as objects and lambda functions.'''
+blanks  = ["___1___","___2___", "___3___", "___4___"]
+sample1 = '''A ___1___ is created with the def keyword. You specify the inputs a ___1___ takes by adding ___2___ separated by commas between the parentheses. ___1___s by default return ___3___ if you don't specify the value to return. ___2___ can be standard data types such as string, number, dictionary, tuple, and ___4___ or can be more complicated such as objects and lambda functions.'''
+answer1=["function", "variables","None","list"]
 
-parts_of_speech1  = ["___1___", "___1___s","___2___", "___3___", "___4___", "___5___"]
+sample2="___1___ intelligence is intelligence exhibited by machines. In ___2___ science, an ideal intelligent machine is a flexible rational agent that perceives its environment and takes actions that maximize its chance of success at some goal.Colloquially, the term ___1___ is applied when a machine mimics ___3___ functions that humans associate with other human minds, such as ___4___ and problem solving."
+answer2=["Artificial", "computer", "cognitive","learning"]
 
-# Checks if a word in parts_of_speech is a substring of the word passed in.
-def word_in_pos(word, parts_of_speech):
-    for pos in parts_of_speech:
-        if pos in word:
-            return pos
-    return None
+sample3="___1___ intelligence (EI) or emotional quotient (EQ) is the capacity of individuals to ___2___ their own, and other people's emotions, to ___3___ between different feelings and ___4___ them appropriately, and to use emotional information to guide thinking and behavior. "
+answer3=["Emotional","recognize","discriminate","label"]
 
-# Plays a full game of mad_libs. A player is prompted to replace words in ml_string,
-# which appear in parts_of_speech with their own words.
-def play_game(ml_string, parts_of_speech1):
-    replaced = []
-    already_input=[]
-    input_list=[]
-    ml_string = ml_string.split()
-    for word in ml_string:
-        matched = word_in_pos(word, parts_of_speech1)
-        if matched != None:
-            if matched not in already_input:
-                user_input = raw_input("Type in a: " + matched + " ")
-                already_input.append(matched) #store the replaced terms
-                input_list.append (user_input) # store the replace values
-                if len(already_input)==1:
-                    already_input.append("___1___s")
-                    input_list.append(user_input)
-                word = word.replace(matched, user_input)
-            else:
-                word = input_list[already_input.index(matched)]
-        replaced.append(word)
-        print replaced
-    replaced = " ".join(replaced)
-    return replaced
+# Plays a full game of Fill-in-the-Blanks. The player will first choose a level to play, and then each time the player enter an answer for a blank. If the answer is correct, then continue to the next blank; if not, the player will be asked to enter again.
 
-print play_game(sample, parts_of_speech1)
+def start_game():
+    user_input = raw_input("choose level: 1, 2, or 3? ")
+    if user_input=="1":
+        result=play_game(sample1,answer1)
+    if user_input=="2":
+        result=play_game(sample2,answer2)
+    if user_input=="3":
+        result=play_game(sample3,answer3)
+    return result
+
+def play_game(sample, answer):
+    print sample
+    # print answer # for debugging purpose
+    i=0 # indicate the sequenc of blanks
+    user_input=None  #initiate user_input
+    for word in answer: # loop over all answers
+        while user_input !=word: # keep looping until the anwwer is right
+            user_input = raw_input("Type in " + blanks[i] + ", or  quit to give up:")
+            if user_input=="quit": # exit mechanism
+                return "Good luck next time~"
+        i=i+1
+    return  "congratulations, you win!" 
+print start_game()
