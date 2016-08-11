@@ -1,19 +1,20 @@
-.headline{
+.headline {
 	color: red;
 }
-.headline2{
+
+.headline2 {
 	color: blue;
 }
 
-img{
-	height:250px;
+img {
+	height: 250px;
 }
 
-p{
+p {
 	background-color: beige;
 }
 
-* {
+body{
 	/*	-webkit-box-sizing: border-box;*/
 	/*	-moz-box-sizing: border-box;*/
 	/*	-ms-box-sizing: border-box;*/
