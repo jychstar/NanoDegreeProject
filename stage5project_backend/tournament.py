@@ -5,11 +5,12 @@
 
 import psycopg2
 
-
 def connect():
     """Connect to the PostgreSQL database.  Returns a database connection."""
-    return psycopg2.connect("dbname=tournament")
-
+    try:
+        return psycopg2.connect("dbname=tournament")  # different from sqlite3
+    except:
+        print ("connection failed")
 
 def deleteMatches():
     """Remove all the match records from the database."""
@@ -20,8 +21,6 @@ def deleteMatches():
     c.execute("update players set wins=0;")
     conn.commit()
     conn.close()
-    return None
-
 
 def deletePlayers():
     """Remove all the player records from the database."""
