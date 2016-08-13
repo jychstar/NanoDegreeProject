@@ -113,6 +113,6 @@ def swissPairings():
     c.execute("create view subque as select  id, name, row_number() over (order by wins) as row from players;")
     c.execute("select a.id, a.name, b.id, b.name from subque as a, subque  as b where a.row=b.row-1 and (b.row %2)=0;")
     results= c.fetchall()
-    #print results
+    #qprint results
     conn.close()
     return results
