@@ -5,6 +5,7 @@
 
 import psycopg2
 
+
 def connect():
     """Connect to the PostgreSQL database.  Returns a database connection."""
     try:
@@ -17,8 +18,8 @@ def deleteMatches():
     conn = connect()
     c = conn.cursor()
     c.execute("delete from matches;")
-    c.execute("update players set matches=0;")
-    c.execute("update players set wins=0;")
+    # c.execute("update players set matches=0;")
+    # c.execute("update players set wins=0;")
     conn.commit()
     conn.close()
 
@@ -35,8 +36,8 @@ def countPlayers():
     """Returns the number of players currently registered."""
     conn = connect()
     c = conn.cursor()
-    c.execute("select count(*) from players;")
-    results= c.fetchone()
+    c.execute("select count(id) from players;")
+    results = c.fetchone()
     conn.close()
     return results[0]
 
@@ -51,7 +52,8 @@ def registerPlayer(name):
     """
     conn = connect()
     c = conn.cursor()
-    c.execute("insert into players(name,wins, matches) values (%s,0,0)", (name,))
+    # c.execute("insert into players(name,wins, matche) values (%s,0,0)", (name,))
+    c.execute("insert into players(name) values (%s)", (name,))
     conn.commit()
     conn.close()
 
@@ -71,8 +73,10 @@ def playerStandings():
     """
     conn = connect()
     c = conn.cursor()
-    c.execute("select id,name, wins,matches from players order by wins;")
+    # c.execute("select id,name, wins,matches from players order by wins;")
+    c.execute("select id,name, coalesce(sum(point),0) as wins, count(matches) as num from players left join matches on id=playerid group by id order by wins DESC;")
     results= c.fetchall()
+    # print results
     conn.close()
     return results
 
@@ -85,10 +89,11 @@ def reportMatch(winner, loser):
     """
     conn = connect()
     c = conn.cursor()
-    c.execute("insert into matches values (%s,%s)", (winner,loser,))
-    c.execute("update players set matches=matches+1 where id=(%s) or id=(%s)", (winner,loser,))
-    c.execute("update players set wins=wins+1 where id=(%s) ", (winner,))
-    #results= c.fetchall()
+    # c.execute("insert into matches values (%s,%s)", (winner,loser,))
+    # c.execute("update players set matches=matches+1 where id=(%s) or id=(%s)", (winner,loser,))
+    # c.execute("update players set wins=wins+1 where id=(%s) ", (winner,))
+    c.execute("insert into matches(playerid, point) values (%s,1)", (winner,))
+    c.execute("insert into matches(playerid, point) values (%s, 0)", (loser,))
     conn.commit()
     conn.close()
 
@@ -109,9 +114,9 @@ def swissPairings():
     """
     conn = connect()
     c = conn.cursor()
-    c.execute("create view subque as select  id, name, row_number() over (order by wins) as row from players;")
+    c.execute("create view subque as select  id, name, row_number() over (order by coalesce(sum(point),0) DESC) as row from players left join matches on id=playerid group by id;")
     c.execute("select a.id, a.name, b.id, b.name from subque as a, subque  as b where a.row=b.row-1 and (b.row %2)=0;")
     results= c.fetchall()
-    #qprint results
+    # print results
     conn.close()
     return results

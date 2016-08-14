@@ -8,6 +8,6 @@
 drop database if exists tournament;
 create database tournament;
 \c tournament
-create table players (id serial primary key, name text, wins integer, matches integer);
-
-create table matches (winner integer, loser integer);
+-- create table players (id serial primary key, name text, wins integer, matches integer);
+create table players (id serial primary key, name text);
+create table matches (matchid serial primary key, playerid integer references players(id), point integer);
