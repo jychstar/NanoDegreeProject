@@ -60,9 +60,7 @@ class LearningAgent(Agent):
         ## TO DO ##
         ###########
         # Set 'state' as a tuple of relevant data for the agent
-        #state = (waypoint,tuple([inputs[item] for item in inputs]), deadline)
-        state = (waypoint,tuple([inputs[item] for item in inputs]))
-
+        state = (waypoint, inputs['light'], inputs['oncoming'], inputs['left'])
         return state
 
 
@@ -74,10 +72,7 @@ class LearningAgent(Agent):
         ## TO DO ##
         ###########
         # Calculate the maximum Q-value of all actions for a given state
-
-        maxQ = float('-inf')
-        for key,value in self.Q[state].iteritems():
-            maxQ = max(maxQ, value)
+        maxQ = max(self.Q[state].values())
 
         return maxQ
 
@@ -148,7 +143,7 @@ class LearningAgent(Agent):
         # When learning, implement the value iteration update rule
         #   Use only the learning rate 'alpha' (do not use the discount factor 'gamma')
         if self.learning:
-            self.Q[state][action] += self.alpha*reward   # future rewards is not considered
+            self.Q[state][action] += self.alpha * (reward - self.Q[state][action])   # future rewards is not considered
         #print state, self.Q[state]
 
         return
@@ -186,7 +181,7 @@ def run():
     #   learning   - set to True to force the driving agent to use Q-learning
     #    * epsilon - continuous value for the exploration factor, default is 1
     #    * alpha   - continuous value for the learning rate, default is 0.5
-    agent = env.create_agent(LearningAgent, learning = True, epsilon = 1,  alpha = 0.3)
+    agent = env.create_agent(LearningAgent, learning = True, epsilon = 1,  alpha = 0.5)
 
     ##############
     # Follow the driving agent
