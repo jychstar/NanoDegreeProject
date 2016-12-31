@@ -60,8 +60,7 @@ class LearningAgent(Agent):
         ## TO DO ##
         ###########
         # Set 'state' as a tuple of relevant data for the agent
-        state = (waypoint, inputs['light'], inputs['oncoming'], inputs['left'])
-        return state
+        return (waypoint, inputs['light'], inputs['oncoming'], inputs['left'])
 
 
     def get_maxQ(self, state):
@@ -72,9 +71,7 @@ class LearningAgent(Agent):
         ## TO DO ##
         ###########
         # Calculate the maximum Q-value of all actions for a given state
-        maxQ = max(self.Q[state].values())
-
-        return maxQ
+        return max(self.Q[state].values())
 
 
     def createQ(self, state):
@@ -87,7 +84,6 @@ class LearningAgent(Agent):
         # If it is not, create a new dictionary for that state
         #   Then, for each action available, set the initial Q-value to 0.0
         if not self.Q or state not in self.Q:
-
             self.Q[state] ={None:0.01,   'left':0.0, 'right':0.0,    'forward':0.0}  # give idle a slightly priority
 
         return
@@ -109,7 +105,6 @@ class LearningAgent(Agent):
         # When not learning, choose a random action
         # When learning, choose a random action with 'epsilon' probability
         #   Otherwise, choose an action with the highest Q-value for the current state
-        import random
         actions = [None, 'left','right', 'forward']  # for full random choice
 
         if not self.learning:
@@ -121,7 +116,7 @@ class LearningAgent(Agent):
             coin = random.random()
             if coin <= self.epsilon:
                 if action_dict[waypoint] == 0.0:
-                    action = waypoint
+                    action = waypoint  # give the waypoint a priority to try
                 else:
                     action = random.choice(actions)
             else:
@@ -144,7 +139,6 @@ class LearningAgent(Agent):
         #   Use only the learning rate 'alpha' (do not use the discount factor 'gamma')
         if self.learning:
             self.Q[state][action] += self.alpha * (reward - self.Q[state][action])   # future rewards is not considered
-        #print state, self.Q[state]
 
         return
 
@@ -203,7 +197,7 @@ def run():
     # Flags:
     #   tolerance  - epsilon tolerance before beginning testing, default is 0.05
     #n_test  - discrete number of testing trials to perform, default is 0
-    sim.run(tolerance=0.01, n_test= 20)
+    sim.run(tolerance=0.05, n_test= 20)
 
 
 if __name__ == '__main__':
