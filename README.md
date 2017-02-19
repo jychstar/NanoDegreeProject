@@ -1,15 +1,18 @@
-This repo is used to submit Udacity Nanodegree projects.
+This repo is used to submit my Udacity Nanodegree projects.
 
-The files in the root directory are under review. The projects that meet specifications have been organized into corresponding folders:
+There are two types of folders in the root directory:
+
+1. lower-case spelling. These are projects currently under review. 
+2. capital-letter. These store projects that meet specification. The acronyms are explained as:
 
 - IPND: Introduction to Programming
 - MLND: Machine Learning Engineer
 - DLND: Deep Learning Foundation 
-- ​
+- ​SCND: Self-driving Car
 
 ## Slack
 
-Deep Learning:			 https://nd101.slack.com/
+Deep Learning ND:		https://nd101.slack.com/
 
 Machine Learning ND:	 https://mlnd-slack.udacity.com/
 
