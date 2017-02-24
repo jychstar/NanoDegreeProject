@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title> Test a Perceptual Phenomenon</title>
+<title>Test a Perceptual Phenomenon</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11851,7 +11851,7 @@ select, textarea{ border-radius: 0px !important; }
 <p><a href="https://docs.google.com/document/d/1-OkpZLjG_kX9J6LIQ5IltsqMzVWjh36QpnP2RYpVdPU/pub?embedded=True">project link</a></p>
 <p><a href="https://review.udacity.com/#!/rubrics/71/view">https://review.udacity.com/#!/rubrics/71/view</a></p>
 <p><a href="https://en.wikipedia.org/wiki/Stroop_effect">https://en.wikipedia.org/wiki/Stroop_effect</a></p>
-<h1 id="Background-Information">Background Information<a class="anchor-link" href="#Background-Information">&#182;</a></h1><p>In a Stroop task, participants are presented with a list of words, with each word displayed in a color of ink. The participant’s task is to say out loud the color of the ink in which the word is printed. The task has two conditions: a congruent words condition, and an incongruent words condition. In the congruent words condition, the words being displayed are color words whose names match the colors in which they are printed: for example RED, BLUE. In the incongruent words condition, the words displayed are color words whose names do not match the colors in which they are printed: for example PURPLE, ORANGE. In each case, we measure the time it takes to name the ink colors in equally-sized lists. Each participant will go through and record a time from each condition.</p>
+<h1 id="Background-Information">Background Information<a class="anchor-link" href="#Background-Information">&#182;</a></h1><p>In a Stroop task, participants are presented with a list of words, with each word displayed in a color of ink. The participant’s task is to say out loud the color of the ink in which the word is printed. The task has two conditions: a congruent words condition, and an incongruent words condition. In the congruent words condition, the words being displayed are color words whose names match the colors in which they are printed: for example RED, BLUE. In the incongruent words condition, the words displayed are color words whose names do not match the colors in which they are printed: for example PURPLE, ORANGE. In each case, we measure the time it takes to name the ink colors in equally-sized lists. Each participant will go through and record a time from each condition.</p>
 
 </div>
 </div>
@@ -11865,7 +11865,8 @@ select, textarea{ border-radius: 0px !important; }
 <ol>
 <li>What is our independent variable? What is our dependent variable?</li>
 </ol>
-<p><strong>Ans:</strong> the color of the ink is independent variable, the name tag of the color is the dependent variable.</p>
+<p><strong>Ans:</strong>  independent variable is the two different conditions, whether it is congruent or incongruent.</p>
+<p>dependent variable is the reading time.</p>
 
 </div>
 </div>
@@ -11878,10 +11879,10 @@ select, textarea{ border-radius: 0px !important; }
 <p>\2. What is an appropriate set of hypotheses for this task? What kind of statistical test do you expect to perform? Justify your choices.</p>
 <p>Ans:</p>
 <ul>
-<li>Null hypothesis: the congruent group and the incongruent group has the same mean value, with a significant value of 5%</li>
-<li>Alternative hypothesis:The mean of the incongruent group is outside the critical region of the mean of congruent group.</li>
+<li>Null hypothesis: the congruent group and the incongruent group has the same mean value, with a significant value of 5%. $H_0: \mu_1=\mu_2$. Here $\mu$ is the mean value for each group.</li>
+<li>Alternative hypothesis:The mean of the incongruent group is outside the critical region of the mean of congruent group. $H_a: \mu_1 \neq \mu_2$</li>
 </ul>
-<p>For statistical test, I will randomly choose 20 people to read the congruent and incongruent words and record the times they spend.</p>
+<p>The kind of statistical test is <strong>dependent sample t-test</strong> on 2 conditions. Because we have relative few samples (&lt;30), we don't know the mean and standard deviation of the population, and we assume the distribution are Gaussian</p>
 
 </div>
 </div>
@@ -11891,7 +11892,7 @@ select, textarea{ border-radius: 0px !important; }
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>\3. Report some descriptive statistics regarding <a href="https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&amp;sa=D&amp;ust=1487887532881000&amp;usg=AFQjCNF6W3Dm_zTuLyhH2jZJBFsMnET7ng">this dataset</a> . Include at least one measure of central tendency and at least one measure of variability.</p>
+<p>\3. Report some descriptive statistics regarding <a href="https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&amp;sa=D&amp;ust=1487887532881000&amp;usg=AFQjCNF6W3Dm_zTuLyhH2jZJBFsMnET7ng">this dataset</a> . Include at least one measure of central tendency and at least one measure of variability.</p>
 <p><strong>Ans:</strong> As shown below, the congruent group has a mean of 14.05 and std of 3.56, the incongruent group has a mean of 22.02 and std of 4.80</p>
 
 </div>
@@ -11899,7 +11900,7 @@ select, textarea{ border-radius: 0px !important; }
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -11918,7 +11919,7 @@ select, textarea{ border-radius: 0px !important; }
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -11951,7 +11952,7 @@ memory usage: 464.0 bytes
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -11965,7 +11966,7 @@ memory usage: 464.0 bytes
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[26]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -12042,7 +12043,7 @@ memory usage: 464.0 bytes
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;kde&#39;</span><span class="p">)</span>
@@ -12056,11 +12057,11 @@ memory usage: 464.0 bytes
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[11]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[5]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x118793240&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x119a6c940&gt;</pre>
 </div>
 
 </div>
@@ -12401,7 +12402,7 @@ kCQVFgVJUmFRkCQVFgVJUmFRkCQVFgVJUmFRkCQVfwMHJ9cpamoTrQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">boxplot</span><span class="p">()</span>
@@ -12415,11 +12416,11 @@ kCQVFgVJUmFRkCQVFgVJUmFRkCQVFgVJUmFRkCQVfwMHJ9cpamoTrQAAAABJRU5ErkJggg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[12]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1189dd5c0&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x11c037400&gt;</pre>
 </div>
 
 </div>
@@ -12515,21 +12516,21 @@ AElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>\5. Now, perform the statistical test and report your results. What is your confidence level and your critical statistic value? Do you reject the null hypothesis or fail to reject it? Come to a conclusion in terms of the experiment task. Did the results match up with your expectations?</p>
-<p><strong>Ans:</strong> This is a dependent sample test. From t-table, for 95% confident level with 23 degree of freedom, the t critical value is 2.069. So a t=-8.02 reject the null hypothesis, which is what I expect.</p>
+<p><strong>Ans:</strong> This is a dependent sample test. From t-table, for 95% confident level with 23 degree of freedom, the t critical value is 2.069. So t=8.02 means the incongruent task take much more time than the congruent task. It is <strong>statistically significant</strong>. So we reject the null hypothesis, which is what I expect.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">s1</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Congruent&#39;</span><span class="p">]</span>
 <span class="n">s2</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Incongruent&#39;</span><span class="p">]</span>
-<span class="n">mean_diff</span> <span class="o">=</span> <span class="n">s1</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">-</span><span class="n">s2</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">mean_diff</span> <span class="o">=</span> <span class="n">s2</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">-</span><span class="n">s1</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span>
-<span class="n">sample_sd</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="n">s1</span><span class="o">-</span><span class="n">s2</span><span class="p">)</span><span class="o">*</span><span class="n">length</span><span class="o">/</span><span class="p">(</span><span class="n">length</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">sample_sd</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="n">s2</span><span class="o">-</span><span class="n">s1</span><span class="p">)</span><span class="o">*</span><span class="n">length</span><span class="o">/</span><span class="p">(</span><span class="n">length</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
 <span class="n">t</span> <span class="o">=</span> <span class="n">mean_diff</span><span class="o">/</span><span class="n">sample_sd</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;mean_diff=</span><span class="si">{0:.2f}</span><span class="se">\n</span><span class="s1"> sample_sd=</span><span class="si">{1:.3f}</span><span class="se">\n</span><span class="s1"> t=</span><span class="si">{2:.3f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">mean_diff</span><span class="p">,</span><span class="n">sample_sd</span><span class="p">,</span><span class="n">t</span><span class="p">))</span>
 </pre></div>
@@ -12544,9 +12545,9 @@ AElFTkSuQmCC
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>mean_diff=-7.96
+<pre>mean_diff=7.96
  sample_sd=4.865
- t=-8.021
+ t=8.021
 </pre>
 </div>
 </div>
