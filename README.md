@@ -1,23 +1,16 @@
-This repo is used to submit my Udacity Nanodegree projects.
+This repo is used to submit my Udacity Nanodegree projects. I really enjoy hacking these projects, pushing myself to think harder in difficult problems and gaining valuable, timely feedback from reviewers.
 
 There are two types of folders in the root directory:
 
 1. lower-case spelling. These are projects currently under review. 
-2. capital-letter. These store projects that meet specification. The acronyms are explained as:
+2. capital-letter acronyms. These store projects that meet specifications. 
 
-- IPND: Introduction to Programming
-- MLND: Machine Learning Engineer
-- DLND: Deep Learning Foundation 
-- ​SCND: Self-driving Car
+| folder | Nanodegree             | Slack                                 |
+| ------ | ---------------------- | ------------------------------------- |
+|        | Artificial Intelligent | https://nd889.slack.com/              |
+| DAND   | Data Analyst           | https://udacitydatascience.slack.com/ |
+| DLND   | Deep Learning          | https://nd101.slack.com/              |
+| IPND   | Intro to Programming   | https://udacityipnd.slack.com/        |
+| MLND   | Machine Learning       | https://mlnd-slack.udacity.com/       |
+| SCND   | Self-driving car       | https://nd013.slack.com/              |
 
-## Slack
-
-Deep Learning ND:		https://nd101.slack.com/
-
-Machine Learning ND:	 https://mlnd-slack.udacity.com/
-
-Artificial Intelligent ND:	 https://nd889.slack.com/
-
-Self-driving car ND:		 https://nd013.slack.com/
-
-Intro to Programming ND: https://udacityipnd.slack.com/
