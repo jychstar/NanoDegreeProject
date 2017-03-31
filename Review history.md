@@ -12,7 +12,13 @@ https://review.udacity.com/#!/reviews/365127
 | --------- | ------------------- | ------ | -------- |
 | 2017-3-28 | CIFAR10             | 423262 | pass     |
 | 2017-3-30 | Generate TV Scripts | 427790 | 4 issues |
-| 2017-3-31 |                     |        |          |
+| 2017-3-31 | Generate TV Scripts | 428418 | 4 issues |
+|           |                     |        |          |
+|           |                     |        |          |
+|           |                     |        |          |
+|           |                     |        |          |
+|           |                     |        |          |
+|           |                     |        |          |
 
 ## Before 2017.2
 
