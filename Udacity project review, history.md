@@ -8,11 +8,11 @@ https://review.udacity.com/#!/reviews/365127
 
 ## After 2017.3
 
-| Date      | project | ID     | Note |
-| --------- | ------- | ------ | ---- |
-| 2017-3-28 | CIFAR10 | 423262 | pass |
-|           |         |        |      |
-|           |         |        |      |
+| Date      | project             | ID     | Note     |
+| --------- | ------------------- | ------ | -------- |
+| 2017-3-28 | CIFAR10             | 423262 | pass     |
+| 2017-3-30 | Generate TV Scripts | 427790 | 4 issues |
+| 2017-3-31 |                     |        |          |
 
 ## Before 2017.2
 
