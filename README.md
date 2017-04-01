@@ -12,5 +12,6 @@ There are two types of folders in the root directory:
 | DLND   | Deep Learning           | https://nd101.slack.com/             | learning |
 | IPND   | Intro to Programming    | https://udacityipnd.slack.com/       | graduate |
 | MLND   | Machine Learning        | https://mlnd-slack.udacity.com/      | dropout  |
+| RoND   | Robotics                |                                      | 5.10     |
 | SCND   | Self-driving car        | https://nd013.slack.com/             | learning |
 

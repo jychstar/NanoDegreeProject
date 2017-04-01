@@ -6,17 +6,17 @@ https://review.udacity.com/#!/reviews/428563
 
 ## After 2017.3
 
-| Date      | project             | ID     | Note     |
-| --------- | ------------------- | ------ | -------- |
-| 2017-3-28 | CIFAR10             | 423262 | pass     |
-| 2017-3-30 | Generate TV Scripts | 427790 | 4 issues |
-| 2017-3-31 | Generate TV Scripts | 428418 | 4 issues |
-| 2017-3-31 | Generate TV Scripts | 428563 | pass     |
-|           |                     |        |          |
-|           |                     |        |          |
-|           |                     |        |          |
-|           |                     |        |          |
-|           |                     |        |          |
+| Date      | project                 | ID     | Note     |
+| --------- | ----------------------- | ------ | -------- |
+| 2017-3-28 | CIFAR10                 | 423262 | pass     |
+| 2017-3-30 | Generate TV Scripts     | 427790 | 4 issues |
+| 2017-3-31 | Generate TV Scripts     | 428418 | 4 issues |
+| 2017-3-31 | Generate TV Scripts     | 428563 | pass     |
+| 2017-4-1  | Traffic sign classifier | 429490 | pass     |
+|           |                         |        |          |
+|           |                         |        |          |
+|           |                         |        |          |
+|           |                         |        |          |
 
 ## Before 2017.2
 
