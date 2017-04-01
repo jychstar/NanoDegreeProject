@@ -2,9 +2,7 @@
 
 Just replace the id in the following link
 
-https://review.udacity.com/#!/reviews/365127
-
-
+https://review.udacity.com/#!/reviews/428563
 
 ## After 2017.3
 
@@ -13,7 +11,7 @@ https://review.udacity.com/#!/reviews/365127
 | 2017-3-28 | CIFAR10             | 423262 | pass     |
 | 2017-3-30 | Generate TV Scripts | 427790 | 4 issues |
 | 2017-3-31 | Generate TV Scripts | 428418 | 4 issues |
-|           |                     |        |          |
+| 2017-3-31 | Generate TV Scripts | 428563 | pass     |
 |           |                     |        |          |
 |           |                     |        |          |
 |           |                     |        |          |
