@@ -1,4 +1,4 @@
-#**Behavioral Cloning** 
+# Behavioral Cloning
 
 My project includes the following files:
 * model.py containing the script to create and train the model
@@ -8,7 +8,7 @@ My project includes the following files:
 
 I would like to address 2 aspects of my project. 
 
-####1. Model Architecture and Training Strategy
+#### 1. Model Architecture and Training Strategy
 
 My model is mostly based on **NVIDIA architecture**, which consists of 5 CNN layers, dropout and 4 dense layer. Among the 5 CNN layers, 3 have 5x5 filter sizes and 2 have 3x3 filter size (model.py lines 49-53). These layers includes RELU layers to introduce nonlinearity. Then a **dropout** layer is subsequent to reduce overfitting (model.py lines 54). 
 
@@ -18,7 +18,7 @@ The model used an **adam optimizer**, so the learning rate was not tuned manuall
 
 The model was trained and validated on different data sets to ensure that the model was not overfitting (code 61). 
 
-####2. source data, format and tricks
+#### 2. source data, format and tricks
 
 My final model only needs the official data provided by Udacity (data.zip, which includes 8036 images). 
 

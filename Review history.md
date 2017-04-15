@@ -13,7 +13,7 @@ https://review.udacity.com/#!/reviews/428563
 | 2017-3-31 | Generate TV Scripts     | 428418 | 4 issues |
 | 2017-3-31 | Generate TV Scripts     | 428563 | pass     |
 | 2017-4-1  | Traffic sign classifier | 429490 | pass     |
-|           |                         |        |          |
+| 2017-4-7  | Behavior cloning        | 438531 | 1        |
 |           |                         |        |          |
 |           |                         |        |          |
 |           |                         |        |          |
