@@ -9,17 +9,17 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of following steps:
 
-| step | Action                               | code functions   |
-| ---- | ------------------------------------ | ---------------- |
-| 1    | convert image file to 3D np array    | cv2.imread       |
-| 2    | convert image to grayscale           | cv2.cvtColor     |
-| 3    | smooth image to suppress noise       | cv2.GaussianBlur |
-| 4    | get edges by canny's gradient method | cv2.Canny        |
-| 5    | propose a mask region                | cv2.fillPoly     |
-| 6    | retain masked edges                  | cv2.bitwise_and  |
-| 7    | extract points that form lines       | cv2.HoughLinesP  |
-| 8    | draw lines on a  blank image         | cv2.line         |
-| 9    | merge original image with lines      | cv2.addWeighted  |
+| step | Action                                   | code functions   |
+| ---- | ---------------------------------------- | ---------------- |
+| 1    | convert image file to 3D np array        | cv2.imread       |
+| 2    | convert image to grayscale               | cv2.cvtColor     |
+| 3    | smooth image to suppress noise           | cv2.GaussianBlur |
+| 4    | **get edges by canny's gradient method** | cv2.Canny        |
+| 5    | propose a mask region                    | cv2.fillPoly     |
+| 6    | retain masked edges                      | cv2.bitwise_and  |
+| 7    | **extract points that form lines**       | cv2.HoughLinesP  |
+| 8    | draw lines on a  blank image             | cv2.line         |
+| 9    | merge original image with lines          | cv2.addWeighted  |
 
 The corresponding result for each state is:
 
