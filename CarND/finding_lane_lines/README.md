@@ -1,11 +1,8 @@
-#**Finding Lane Lines on the Road** 
-The goals / steps of this project are the following:
-* Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
----
-### Reflection
+# Finding Lane Lines on the Road 
+As a kick-off project, the goal is identify **straight** lane lines on the road.
 
-###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+
+## 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 My pipeline consisted of following steps:
 
@@ -28,14 +25,14 @@ The corresponding result for each state is:
 I didn't modified the draw_lines() function. Although the lines seem odd with discontinuity, I keep as much original information as possible. Because it doens't matter so much to human eyes. What it really matters is how computer perceives the situation and makes rational decision.  
 
 
-###2. Identify potential shortcomings with your current pipeline
+## 2. Identify potential shortcomings with your current pipeline
 
 1. Before going to technical details, it's better to be awared of the big picture. This is a quite ideal scenario: clear visibility, light traffic, straight road, clear lane lines, no road signs, no traffic lights, no blockage, etc.
 2. For my current pipeline, the biggest problem is it heavily relies on manual tuning for the mask region. Distractive edges are simply filtered out by manual tweak. This is not an intelligent way and will not respond correctly to different road condition or even camera position. 
-3. The final lines have discontinued area, which should be improved.
+3. `cv2.HoughLinesP` is only able to detect straight lines. It **fails to detect the curved lines**.
 
 
-###3. Suggest possible improvements to your pipeline
+## 3. Suggest possible improvements to your pipeline
 
 1. use a more intelligent way to propose mask region
 2. better line drawing function to form a closed area.
