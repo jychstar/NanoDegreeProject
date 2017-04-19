@@ -89,13 +89,13 @@ The image with detected window and hotmap is
 
 ![](writeup_images/lenet_heatmap.png)
 
-### Video Implementation
+## Video Implementation
 
-####1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
+### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
 Here's a [link to my video result](./project_output4.mp4)
 
 
-####2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
+### 2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
 
 My final pipeline use **bgr raw based lenet**, which seems to be more powerful than  bgr hog based svc. There are several details that worths to be mentioned:
 
@@ -107,12 +107,11 @@ My final pipeline use **bgr raw based lenet**, which seems to be more powerful t
 6. use `glob.glob` to read these image files into a list and feed them into `ImageSequenceClip(imageList, fps=25)`, and fianlly `clip.write_videofile`
 
 
-
 ---
 
-###Discussion
+## Discussion
 
-####1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
+### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
 There are some false positives where the lane lines are recognized as cars. However, set a higher threshold will filter out the car that is far away. 
 
