@@ -91,7 +91,7 @@ With these points, I am able to fit parabolic curves and use the fitting coeffic
 
 ![](output_images/oriented_search.png)
 
-####5. Describe how you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
+## 2.4 Describe how you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
 For the real-world curvature, the first thing is to make a connections between the pixel value and the physcial size. The use the rescaled pixels and equation to recalculate the fitting coefficient.
 
@@ -104,7 +104,7 @@ Then use `cv2.putText()` to write these information on image.
 
 ![](output_images/curvature.png)
 
-####6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
+## 2.5 Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
 The code snippet is alread provided by the project instruction. The key thing is use   Minv to warp image back to the original perspecive. Here is an example of my result on a test image:
 
@@ -125,9 +125,9 @@ Here's a [link to my video result on Youtube](https://youtu.be/xZK199K9jwk)
 
 ---
 
-###Discussion
+## Discussion
 
-####1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
+### Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
 I have played a trick in processing the image: put a mask area to fill out the undesirable background: sky, tress, other cars, etc. 
 
