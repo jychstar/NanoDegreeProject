@@ -13,7 +13,7 @@ There are two types of folders in the root directory:
 | IntroND   | Intro to Programming        | [link](https://udacityipnd.slack.com/)   | **100%**   |
 | MachineND | Machine Learning            | [link](https://mlnd-slack.udacity.com/)  | dropout    |
 | RobotND   | Robotics                    |                                          | 2017. 5.24 |
-| CarND     | Self-driving car (term1)    | https://nd013.slack.com/                 | 80%        |
+| CarND     | Self-driving car (term1)    | https://nd013.slack.com/                 | 100%       |
 
 [Self-driving car course calendar for each cohort](https://docs.google.com/spreadsheets/d/12ipd3BmKD5aaCaKOtuBsQ6Bh6yM7TQ99uO5SxxawoQo/edit#gid=0)
 
