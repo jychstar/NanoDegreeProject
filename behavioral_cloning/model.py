@@ -1,6 +1,7 @@
 import csv
 import cv2
 import numpy as np
+import matplotlib.image as mpimg
 # get metadata  of the images
 lines =[]
 with open("data/driving_log.csv") as csvfile:
@@ -15,10 +16,10 @@ for line in lines:
     source_path = line[0]
     filename = source_path.split("/")[-1]
     current_path = "data/IMG/" + filename
-    imgBGR = cv2.imread(current_path) # shape (160,320,3)
-    imgRGB = cv2.cvtColor(imgBGR, cv2.COLOR_BGR2RGB)
-    #cropped = imgRGB[50:140,:,:]
-    images.append(imgRGB)
+    rgb = mpimg. imread(current_path)
+    #imgBGR = cv2.imread(current_path) # shape (160,320,3)
+    #imgRGB = cv2.cvtColor(imgBGR, cv2.COLOR_BGR2RGB)
+    images.append(rgb)
     measurement = float(line[3])  # steer
     measurements.append(measurement)
     #images.append(np.fliplr(imgRGB)) # flip images

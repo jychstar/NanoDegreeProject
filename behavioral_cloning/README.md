@@ -1,12 +1,23 @@
 # Behavioral Cloning
 
+The goals / steps of this project are the following:
+
+- Use the simulator to collect data of good driving behavior
+- Build, a convolution neural network in Keras that predicts steering angles from images
+- Train and validate the model with a training and validation set
+- Test that the model successfully drives around track one without leaving the road
+- Summarize the results with a written report
+
 My project includes the following files:
+
 * model.py containing the script to create and train the model
 * drive.py for driving the car in autonomous mode
 * model.h5 containing a trained convolution neural network 
 * writeup_report.md or writeup_report.pdf summarizing the results
 
-I would like to address 2 aspects of my project. 
+I didn't use the writeup template. Because it limits my thinking. It is more for the grader rather than the learner. 
+
+So, I would like to highlight 2 aspects of my project. 
 
 #### 1. Model Architecture and Training Strategy
 
@@ -28,6 +39,12 @@ I have tried these things:
 - augment data by flipping or multiple cameras
 - save model trained on the whole laps and continue training on the sharp turns.
 
-However, I came to realize that as [Carlos Galvez](https://carnd-forums.udacity.com/questions/users?username=carlosgalvezp) pointed out in [a discussion kicked off by Paul Heraty](https://carnd-forums.udacity.com/questions/26214464/behavioral-cloning-cheatsheet#), the No. 0 issue is drive.py sends RGB images to the model; cv2.imread() reads images in BGR format. So the magic code is `imgRGB = cv2.cvtColor(imgBGR, cv2.COLOR_BGR2RGB)` (line 19).
+Because my car fails to steer enough in the sharp turns, I intentionally add training data in these areas:
 
-Then the car was able to run through the simulator and stay on the track.
+![](left_turn.jpg)
+
+![](right_turn.jpg)
+
+However, I came to realize that as [Carlos Galvez](https://carnd-forums.udacity.com/questions/users?username=carlosgalvezp) pointed out in [a discussion kicked off by Paul Heraty](https://carnd-forums.udacity.com/questions/26214464/behavioral-cloning-cheatsheet#), **the No. 0 issue is drive.py sends RGB images to the model**; cv2.imread() reads images in BGR format. This teaches me a hard lesson: **never use cv2 to read image**. Intead, use `matplotlib.image.imread()` , which is the most-common practise accross different packages. 
+
+So, in the end, I only use the offical data and the car was able to run through the simulator and stay on the track.
