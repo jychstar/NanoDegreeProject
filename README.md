@@ -7,13 +7,14 @@ There are two types of folders in the root directory:
 
 | folder    | Nanodegree                  | Slack                                    | Progress   |
 | --------- | --------------------------- | ---------------------------------------- | ---------- |
-| AIND      | Artificial Intelligence (1) | https://ai-nd.slack.com/                 | started    |
+| AIND      | Artificial Intelligence (1) | https://ai-nd.slack.com/                 | 25%        |
 | DataND    | Data Analyst                | [link](https://udacitydatascience.slack.com) | dropout    |
 | DeepND    | Deep Learning foundation    | https://nd101.slack.com/                 | 60%        |
 | IntroND   | Intro to Programming        | [link](https://udacityipnd.slack.com/)   | **100%**   |
 | MachineND | Machine Learning            | [link](https://mlnd-slack.udacity.com/)  | dropout    |
 | RobotND   | Robotics                    |                                          | 2017. 5.24 |
 | CarND     | Self-driving car (term1)    | https://nd013.slack.com/                 | 100%       |
+| CarND     | Self-driving car (term2)    |                                          | 2017.5.11  |
 
 [Self-driving car course calendar for each cohort](https://docs.google.com/spreadsheets/d/12ipd3BmKD5aaCaKOtuBsQ6Bh6yM7TQ99uO5SxxawoQo/edit#gid=0)
 

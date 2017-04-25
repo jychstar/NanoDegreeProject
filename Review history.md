@@ -1,5 +1,3 @@
-
-
 Just replace the id in the following link
 
 https://review.udacity.com/#!/reviews/428563
@@ -17,6 +15,11 @@ https://review.udacity.com/#!/reviews/428563
 | 2017-4-15 | Vehicle detection       | 449324 | pass     |
 | 2017-4-19 | Behavior cloning        | 456491 | pass     |
 | 2017-4-19 | Advanced Lane Lines     | 456440 | pass     |
+| 2017-4-24 | Resume review           | 463114 | pass     |
+| 2017-4-24 | Sudoku                  | 463109 | 3        |
+|           |                         |        |          |
+|           |                         |        |          |
+|           |                         |        |          |
 
 ## Before 2017.2
 
@@ -36,8 +39,3 @@ https://review.udacity.com/#!/reviews/428563
 | 2017-2-5  | Interview Practice (Machine Learning) | 351667 | 5 issues  |
 | 2016-8-10 | Investigate a Dataset                 | 203997 | 3 issues  |
 | 2016-7-28 | Make a Web Page                       | 195796 | 1 issue   |
-|           |                                       |        |           |
-|           |                                       |        |           |
-|           |                                       |        |           |
-|           |                                       |        |           |
-|           |                                       |        |           |
