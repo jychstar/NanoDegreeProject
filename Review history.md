@@ -1,6 +1,8 @@
-Just replace the id in the following link
+Just replace the id in the following link. 
 
 https://review.udacity.com/#!/reviews/428563
+
+
 
 ## After 2017.3
 
@@ -17,7 +19,7 @@ https://review.udacity.com/#!/reviews/428563
 | 2017-4-19 | Advanced Lane Lines     | 456440 | pass     |
 | 2017-4-24 | Resume review           | 463114 | pass     |
 | 2017-4-24 | Sudoku                  | 463109 | 3        |
-|           |                         |        |          |
+| 2017-4-24 | Sudoku                  | 463599 | pass     |
 |           |                         |        |          |
 |           |                         |        |          |
 
