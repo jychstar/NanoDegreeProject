@@ -4,26 +4,26 @@ https://review.udacity.com/#!/reviews/428563
 
 
 
-## After 2017.3
+## 2017.3-2017.5
 
-| Date      | project                 | ID     | Status   |
-| --------- | ----------------------- | ------ | -------- |
-| 2017-3-28 | CIFAR10                 | 423262 | pass     |
-| 2017-3-30 | Generate TV Scripts     | 427790 | 4 issues |
-| 2017-3-31 | Generate TV Scripts     | 428418 | 4 issues |
-| 2017-3-31 | Generate TV Scripts     | 428563 | pass     |
-| 2017-4-1  | Traffic sign classifier | 429490 | pass     |
-| 2017-4-7  | Behavior cloning        | 438531 | 1        |
-| 2017-4-15 | Vehicle detection       | 449324 | pass     |
-| 2017-4-19 | Behavior cloning        | 456491 | pass     |
-| 2017-4-19 | Advanced Lane Lines     | 456440 | pass     |
-| 2017-4-24 | Resume review           | 463114 | pass     |
-| 2017-4-24 | Sudoku                  | 463109 | 3        |
-| 2017-4-24 | Sudoku                  | 463599 | pass     |
-|           |                         |        |          |
-|           |                         |        |          |
+| Date      | project                 | ID     | Status   | skill             |
+| --------- | ----------------------- | ------ | -------- | ----------------- |
+| 2017-3-28 | CIFAR10                 | 423262 | pass     | deep learning     |
+| 2017-3-30 | Generate TV Scripts     | 427790 | 4 issues |                   |
+| 2017-3-31 | Generate TV Scripts     | 428418 | 4 issues |                   |
+| 2017-3-31 | Generate TV Scripts     | 428563 | pass     | deep learning     |
+| 2017-4-1  | Traffic sign classifier | 429490 | pass     | deep learning     |
+| 2017-4-7  | Behavior cloning        | 438531 | 1        |                   |
+| 2017-4-15 | Vehicle detection       | 449324 | pass     | deep learning     |
+| 2017-4-19 | Behavior cloning        | 456491 | pass     | deep learning     |
+| 2017-4-19 | Advanced Lane Lines     | 456440 | pass     | computer vison    |
+| 2017-4-24 | Resume review           | 463114 | pass     |                   |
+| 2017-4-24 | Sudoku                  | 463109 | 3        |                   |
+| 2017-4-24 | Sudoku                  | 463599 | pass     | comprehension     |
+| 2017-4-30 | catelog demand          | 472521 | pass     | linear regression |
+|           |                         |        |          |                   |
 
-## Before 2017.2
+## 2016.7- 2017.2
 
 | date      | project                               | ID     | note      |
 | --------- | ------------------------------------- | ------ | --------- |
