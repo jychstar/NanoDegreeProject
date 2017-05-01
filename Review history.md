@@ -21,6 +21,11 @@ https://review.udacity.com/#!/reviews/428563
 | 2017-4-24 | Sudoku                  | 463109 | 3        |                   |
 | 2017-4-24 | Sudoku                  | 463599 | pass     | comprehension     |
 | 2017-4-30 | catelog demand          | 472521 | pass     | linear regression |
+| 2017-4-30 | diamond price           | 472489 | pass     | visualization     |
+|           |                         |        |          |                   |
+|           |                         |        |          |                   |
+|           |                         |        |          |                   |
+|           |                         |        |          |                   |
 |           |                         |        |          |                   |
 
 ## 2016.7- 2017.2
