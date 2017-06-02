@@ -1,0 +1,13 @@
+**Kalman Filter is basically an algorithms to update an object's status by measurement and prediction**. Due to the uncetainty nature of a moving object, **Gaussian distribution** is used to describe the object. 
+
+More specifically, an object's state is decribe by a **4D vector (x, y, vx, vy)**. This is in consistent with our human perception of the world. For this study, we focus self-driving car's 2 sensors: lidar and radar.
+
+Radar was invented during World War II, even before laser was invented. It is relatively cheap and affordable. It can detector a object's moving speed based on Dopler effect. However, its space resolution is much worser than lidar.  And it is in the polar coordiates. 
+
+From the perspective of physics, these 2 sensors are very much the same and only differ by the wavelength(or frequency). But why their information presentations are so different?  
+
+In my opinion, it's mostly due to **Heisenberg's uncertainty principle**, $\delta_x\delta_p\ge\hbar/2$, if you are more precise on position, then you are less precise on velocity. And the spatial resolution is determined by the emitting wavelength. So lidar will have its natural advantage on spatial resolution but natural disadvantage on speed resolution.  Yes, in principle Dopler effect applies to both sensors.  But because light frequency is already too high,on the order of 1000 THz, a small shift on the frequency will be easily buried in the main frequency. 
+
+The 2nd interesting difference is the polar coordiates. In principle, the lidar data in its primitive format should be also polar, which is technically called **point cloud**. For the sake of human-level understanding, it is converted into Cartesian coordinate. 
+
+The implementation for Kalman filter is Kalman Matrix. It looks somewhat similar to gradient descent. Basically you use the measurement errors to calculate a **Kalman Gain K** to update your state. For (x,y) coordinate, it is a **linear transformation matrix H**. But for $(\rho,\theta)$ coordinate, things are more complicated. For the first order approximation as in Talor Expansion, we use **Jacobian Matrix Hj**. The nice thing is that all the equations can keep the same format. The only exception is the error term, we use **strict mathematical format to convert 4D state to the 3D polor state**, which is not difficult.  The derivation details of why H and Hj can apply to the same set of equations  is interesting, but is beyond my current timeframe. 
