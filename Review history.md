@@ -4,6 +4,20 @@ https://review.udacity.com/#!/reviews/428563
 
 
 
+## 2017.6-
+
+| DAte     | Program | project       | ID     | Note |
+| -------- | ------- | ------------- | ------ | ---- |
+| 2017-6-1 | Car ND  | Kalman Filter | 529880 | pass |
+|          |         |               |        |      |
+|          |         |               |        |      |
+|          |         |               |        |      |
+|          |         |               |        |      |
+|          |         |               |        |      |
+|          |         |               |        |      |
+|          |         |               |        |      |
+|          |         |               |        |      |
+
 ## 2017.3-2017.5
 
 | Date      | project                 | ID     | Status   | skill             |
@@ -22,11 +36,6 @@ https://review.udacity.com/#!/reviews/428563
 | 2017-4-24 | Sudoku                  | 463599 | pass     | comprehension     |
 | 2017-4-30 | catelog demand          | 472521 | pass     | linear regression |
 | 2017-4-30 | diamond price           | 472489 | pass     | visualization     |
-|           |                         |        |          |                   |
-|           |                         |        |          |                   |
-|           |                         |        |          |                   |
-|           |                         |        |          |                   |
-|           |                         |        |          |                   |
 
 ## 2016.7- 2017.2
 

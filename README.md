@@ -13,9 +13,9 @@ There are two types of folders in the root directory:
 | DeepND    | Deep Learning foundation    | https://nd101.slack.com/                 | 60%         |
 | IntroND   | Intro to Programming        | [link](https://udacityipnd.slack.com/)   | **100%**    |
 | MachineND | Machine Learning            | [link](https://mlnd-slack.udacity.com/)  | 90%-dropout |
-| RobotND   | Robotics                    |                                          | 2017. 5.24  |
-| CarND     | Self-driving car (term1)    | https://nd013.slack.com/                 | 100%        |
-| CarND     | Self-driving car (term2)    |                                          | 2017.5.11   |
+| RobotND   | Robotics                    |                                          | started     |
+| CarND     | Self-driving car (term1)    | https://nd013.slack.com/                 | **100%**    |
+| CarND2    | Self-driving car (term2)    |                                          | 20%         |
 
 [Self-driving car course calendar for each cohort](https://docs.google.com/spreadsheets/d/12ipd3BmKD5aaCaKOtuBsQ6Bh6yM7TQ99uO5SxxawoQo/edit#gid=0)
 
