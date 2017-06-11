@@ -12,7 +12,7 @@ https://review.udacity.com/#!/reviews/428563
 | 2017-6-7 | Deep ND | language translate | 539441 | 5 issues |
 | 2017-6-7 | Deep ND | language translate | 540221 | 2 issues |
 | 2017-6-8 | Deep ND | language translate | 540383 | pass     |
-|          |         |                    |        |          |
+| 2017-6-9 | Deep ND | face generation    | 542918 | pass     |
 |          |         |                    |        |          |
 |          |         |                    |        |          |
 |          |         |                    |        |          |
