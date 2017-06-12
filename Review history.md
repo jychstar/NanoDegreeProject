@@ -6,17 +6,17 @@ https://review.udacity.com/#!/reviews/428563
 
 ## 2017.6-
 
-| DAte     | Program | project            | ID     | Note     |
-| -------- | ------- | ------------------ | ------ | -------- |
-| 2017-6-1 | Car ND  | Kalman Filter      | 529880 | pass     |
-| 2017-6-7 | Deep ND | language translate | 539441 | 5 issues |
-| 2017-6-7 | Deep ND | language translate | 540221 | 2 issues |
-| 2017-6-8 | Deep ND | language translate | 540383 | pass     |
-| 2017-6-9 | Deep ND | face generation    | 542918 | pass     |
-|          |         |                    |        |          |
-|          |         |                    |        |          |
-|          |         |                    |        |          |
-|          |         |                    |        |          |
+| DAte      | Program | project            | ID     | Note     |
+| --------- | ------- | ------------------ | ------ | -------- |
+| 2017-6-1  | Car ND2 | Kalman Filter      | 529880 | pass     |
+| 2017-6-7  | Deep ND | language translate | 539441 | 5 issues |
+| 2017-6-7  | Deep ND | language translate | 540221 | 2 issues |
+| 2017-6-8  | Deep ND | language translate | 540383 | pass     |
+| 2017-6-9  | Deep ND | face generation    | 542918 | pass     |
+| 2017-6-11 | Car ND2 | Kalman Filter2     | 545128 | 1 issue  |
+| 2017-6-11 | Car ND2 | Kalman Filter2     | 545691 | pass     |
+|           |         |                    |        |          |
+|           |         |                    |        |          |
 
 ## 2017.3-2017.5
 
