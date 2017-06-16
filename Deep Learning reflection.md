@@ -2,7 +2,7 @@ Tensorflow learning guide : http://www.yuchao.us/2017/01/tensorflow-my-learning-
 
 Tensor board: http://www.yuchao.us/2017/02/tensorboard.html 
 
-It's time to reflection on what projects I have accomplished.
+It's time to reflection on what projects I have accomplished. The post date refers to the blog post date.
 
 | Postdate   | dateset       | records    | in/out   | Note                                     |
 | ---------- | ------------- | ---------- | -------- | ---------------------------------------- |
