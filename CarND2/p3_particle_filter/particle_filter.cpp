@@ -101,12 +101,11 @@ void ParticleFilter::updateWeights(double sensor_range, double std_landmark[],
     weights.clear();
 	for (Particle &p: particles){
         //cout<<"particles:" <<endl;
-		vector<int> associations;
-		vector<double> sense_x;
-		vector<double> sense_y;
+        p.associations.clear();
+        p.sense_x.clear();
+        p.sense_y.clear();
 		double prob = 1.0;
-		double distance;
-		long double multiplier;
+		double distance, multiplier;
 		for (const LandmarkObs &obs: observations){
             //cout<<"observations:"<<endl;
 			double x = p.x + obs.x * cos(p.theta) - obs.y * sin(p.theta); // particle in map's coordinate
@@ -121,25 +120,20 @@ void ParticleFilter::updateWeights(double sensor_range, double std_landmark[],
 					closest_landmark = landmark;
 				}
 			} // for loop landmark to find closest landmark
-			multiplier = 1/(2 * M_PI * std_landmark[0] * std_landmark[1])
-							   *exp(-(pow(x - closest_landmark.x_f,2)/2/pow(std_landmark[0],2)))
-							   *exp(-(pow(y - closest_landmark.y_f,2)/2/pow(std_landmark[1],2)));
-			if (multiplier > 0) {
-				//cout <<"multipler:" << multiplier <<endl;
-				prob *= multiplier;
-				sense_x.push_back(x);
-				sense_y.push_back(y);
-				associations.push_back(closest_landmark.id_i);
-			}
+            if (closest_dis < sensor_range) { // make sure there is a landmark in range
+                multiplier = 1 / (2 * M_PI * std_landmark[0] * std_landmark[1])
+                             * exp(-(pow(x - closest_landmark.x_f, 2) / 2 / pow(std_landmark[0], 2)))
+                             * exp(-(pow(y - closest_landmark.y_f, 2) / 2 / pow(std_landmark[1], 2)));
+                prob *= multiplier;
+                p.sense_x.push_back(x);
+                p.sense_y.push_back(y);
+                p.associations.push_back(closest_landmark.id_i);
+            }
 		} // end observation
+        if (p.associations.size()==0)
+            prob = 0;
         p.weight = prob;
         weights.push_back(prob);
-		//cout << "w:"<<prob <<p.weight<<"\t";
-
-        p.associations = associations;
-        p.sense_x = sense_x;
-        p.sense_y = sense_y;
-
 		//p = SetAssociations(p,associations,sense_x,sense_y); // clear old value and fill in new value
 	} // end particle
 	cout <<endl;
