@@ -10,7 +10,7 @@ This repo is used to submit my Udacity Nanodegree projects. I really enjoy doing
 | MachineND | Machine Learning            | [link](https://mlnd-slack.udacity.com/)  | 90%-dropout |
 | RobotND   | Robotics                    |                                          | 10%         |
 | CarND     | Self-driving car (term1)    | https://nd013.slack.com/                 | **100%**    |
-| CarND2    | Self-driving car (term2)    |                                          | 60%         |
+| CarND2    | Self-driving car (term2)    |                                          | **100%**    |
 
 [Self-driving car course calendar for each cohort](https://docs.google.com/spreadsheets/d/12ipd3BmKD5aaCaKOtuBsQ6Bh6yM7TQ99uO5SxxawoQo/edit#gid=0)
 
