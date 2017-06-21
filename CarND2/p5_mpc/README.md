@@ -1,6 +1,59 @@
+project material: https://github.com/udacity/CarND-MPC-Project
+
+project rubric: https://review.udacity.com/#!/rubrics/896/view
+
 walk-through video: https://www.youtube.com/watch?v=bOQuhpz3YfU
 
-There are 3 major difficulties in this projects.
+---
+
+Answers  to the project requirements:
+
+## 1. Model 
+
+```c++
+using namespace Eigen;
+const double Lf = 2;
+VectorXd globalKinematic(VectorXd state,VectorXd actuators, double dt) {
+  // NOTE: state is [x, y, psi, v]
+    double x = state[0];
+    double y = state[1];
+    double psi = state[2];
+    double v = state[3];
+  // NOTE: actuators is [delta, a]
+  	double delta = actuators[0];
+  	double a = actuators[1];
+  // update equation
+  	VectorXd next_state(state.size());
+    next_state[0] = x + v * cos (psi) * dt;
+    next_state[1] = y + v * sin (psi) * dt;
+    next_state[2] = psi + v / Lf * delta * dt;
+    next_state[3] = v + a * dt;
+  return next_state;
+}
+```
+
+## 2 time scope
+
+Based on human driver's intuition, a car should look further into 50~ 100 meters. So looking further for 2~ 3 seconds is a reasonable time scope.  I chose timestep of 0.1 s because it is the same with time latency. If timestep is too small, it will be sensitive to random noise. Then I use N = 20 to get a timescope of 2 seconds.  The number is not too large so the optimizer can finish calculation in very short time. 
+
+## 3 data preprocessing
+
+The simulator is actually a black box before I have the ablity to look into its source code.  There are 2 mysteries:
+
+- map coordiantes vs car coordinates. This has been addressed by my following reflection.
+- simulator unit system vs optimizer unit system.  I tried to manually do a calibration by logging the simulator output and high school physics, but failed due to **non-uniform timestep and noisy control input**. After I remove speed conversion, everything works fine.  I think the simulator is actually using m/s instead of MPH  
+
+## 4 latency
+
+Latency means the car keeps the current actuators for additional time before the new control comes in. It is just let the car "free ride" for 0.1 s then send the state into optimizer. For MPC hyperparamter, I double the penalty for the change of steer.
+
+Adding latency do increase the stability of the car driving because you have no control during the 0.1 s so the car is forced to driving more proactively or more predictively.
+
+It's very interesting. We add some "stupidity" into the car but it actually becomes more intelligent!
+
+# Reflection
+
+Beside the project requirements, I would like to address 3 technical difficulties.
 
 ## 1 Understand how to use Ipopt solver to optimize MPC parameters
 

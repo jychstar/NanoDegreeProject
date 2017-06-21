@@ -2,7 +2,7 @@ This repo is used to submit my Udacity Nanodegree projects. I really enjoy doing
 
 | folder    | Nanodegree                  | Slack                                    | Progress    |
 | --------- | --------------------------- | ---------------------------------------- | ----------- |
-| AIND      | Artificial Intelligence (1) | https://ai-nd.slack.com/                 | 25%         |
+| AIND      | Artificial Intelligence (1) | https://ai-nd.slack.com/                 | 50%         |
 | BAND      | Business Analyst            |                                          | 50%-dropout |
 | DataND    | Data Analyst                | [link](https://udacitydatascience.slack.com) | 80%-dropout |
 | DeepND    | Deep Learning foundation    | https://nd101.slack.com/                 | **100%**    |
