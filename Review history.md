@@ -2,9 +2,18 @@ Just replace the id in the following link.
 
 https://review.udacity.com/#!/reviews/428563
 
+## 2017.7 
 
+| DAte      | Program | project   | ID     | Note     |
+| --------- | ------- | --------- | ------ | -------- |
+| 2017-7-11 | AIND    | isolation | 602353 | 3 issues |
+| 2017-7-11 | AIND    | isolation | 602838 | 4 issues |
+| 2017-7-14 | AIND    | isolation | 607020 | pass     |
+| 2017-8-25 | AIND    | HMM       | 698090 | 1 issue  |
+| 2017-8-25 | AIND    | HMM       | 698294 | 1 issue  |
+|           |         |           |        |          |
 
-## 2017.6-
+## 2017.6
 
 | DAte      | Program | project            | ID     | Note     |
 | --------- | ------- | ------------------ | ------ | -------- |
