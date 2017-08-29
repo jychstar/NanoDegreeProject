@@ -23,7 +23,7 @@ It's time to reflection on what projects I have accomplished. The post date refe
 | 2017-4-1   | TrafficSign   | 50 k       | 36^2/43  | tf 5 layer LeNet, no dropout             |
 | 2017-4-7   | ImageNet      |            | 227^2/1k | AlexNet: 5 cnn + 3 fc                    |
 | 2017-4-7   | behaviorClone |            | 50 k/reg | Nvidia: 5 cnn + 4 fc, 5 M para           |
-| 2017-4-15  | car image     | 18 k       | 64^2/reg | LeNet: 2cnn + 3 fc                       |
+| 2017-4-15  | car image     | 18 k       | 64^2/2   | LeNet: 2cnn + 3 fc                       |
 |            |               |            |          |                                          |
 
 capstone video: https://youtu.be/w15GpupQusM
