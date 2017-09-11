@@ -12,6 +12,9 @@ https://review.udacity.com/#!/reviews/428563
 | 2017-8-25 | AIND    | HMM       | 698090 | 1 issue  |
 | 2017-8-25 | AIND    | HMM       | 698294 | 1 issue  |
 | 2017-8-25 | AIND    | HMM       | 698377 | pass     |
+| 2017-8-29 | RoND    | mapping   | 704820 | pass     |
+|           |         |           |        |          |
+|           |         |           |        |          |
 
 ## 2017.6
 
