@@ -8,9 +8,19 @@ This repo is used to submit my Udacity Nanodegree projects. I really enjoy doing
 | DeepND    | Deep Learning foundation    | https://nd101.slack.com/                 | **100%**    |
 | IntroND   | Intro to Programming        | [link](https://udacityipnd.slack.com/)   | **100%**    |
 | MachineND | Machine Learning            | [link](https://mlnd-slack.udacity.com/)  | 90%-dropout |
-| RobotND   | Robotics                    |                                          | 50%         |
+| RobotND   | Robotics                    |                                          | 70%         |
 | CarND     | Self-driving car (term1)    | https://nd013.slack.com/                 | **100%**    |
 | CarND2    | Self-driving car (term2)    |                                          | **100%**    |
 
 [Self-driving car course calendar for each cohort](https://docs.google.com/spreadsheets/d/12ipd3BmKD5aaCaKOtuBsQ6Bh6yM7TQ99uO5SxxawoQo/edit#gid=0)
 
+Robot ND schedule:
+
+Project deadlines:
+
+1. Jun. 7
+2. Jul. 5
+3. Jul. 26
+4. Sep. 15?
+
+term ends on Oct. 18
