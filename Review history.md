@@ -15,7 +15,7 @@ https://review.udacity.com/#!/reviews/428563
 | 2017-8-29 | RoND    | mapping    | 704820 | pass     |
 | 2017-9-12 | RoND    | kinematics | 731583 | occupy   |
 | 2017-9-13 | RoND    | kinematics | 735907 | pass     |
-|           |         |            |        |          |
+| 2017-9-16 | RoND    | perception | 741547 | 2 issues |
 |           |         |            |        |          |
 |           |         |            |        |          |
 |           |         |            |        |          |

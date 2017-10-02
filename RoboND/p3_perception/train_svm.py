@@ -5,7 +5,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import svm
 from sklearn.preprocessing import LabelEncoder, StandardScaler
-from sklearn import cross_validation
+#from sklearn import cross_validation
+from sklearn.model_selection import cross_val_score,cross_val_predict
 from sklearn import metrics
 
 def plot_confusion_matrix(cm, classes,
@@ -37,7 +38,7 @@ def plot_confusion_matrix(cm, classes,
 
 # Load training data from disk
 training_set = pickle.load(open('training_set.sav', 'rb'))
-
+print type(training_set)
 # Format the features and labels for use with scikit learn
 feature_list = []
 label_list = []
@@ -71,7 +72,7 @@ kf = cross_validation.KFold(len(X_train),
                             random_state=1)
 
 # Perform cross-validation
-scores = cross_validation.cross_val_score(cv=kf,
+scores = cross_val_score(cv=kf,
                                          estimator=clf,
                                          X=X_train, 
                                          y=y_train,
@@ -81,7 +82,7 @@ print('Scores: ' + str(scores))
 print('Accuracy: %0.2f (+/- %0.2f)' % (scores.mean(), 2*scores.std()))
 
 # Gather predictions
-predictions = cross_validation.cross_val_predict(cv=kf,
+predictions = cross_val_predict(cv=kf,
                                           estimator=clf,
                                           X=X_train, 
                                           y=y_train
