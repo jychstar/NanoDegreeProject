@@ -7,7 +7,9 @@ zootopia=media.Movie("Zootopia",
 								# the prefix https:// can't be omitted, otherwise cause errors
 
 terminator_2=media.Movie("Terminator 2: Judgment Day",
-									"Future robots time travel to change the world", "https://upload.wikimedia.org/wikipedia/en/8/85/Terminator2poster.jpg", "https://www.youtube.com/watch?v=PZY-5SmjvXg")
+									"Future robots time travel to change the world", 
+									"https://upload.wikimedia.org/wikipedia/en/8/85/Terminator2poster.jpg",
+									 "https://www.youtube.com/watch?v=PZY-5SmjvXg")
 amelie = media.Movie("Amelie",
                      "A fanciful comedy about a young woman who discretely \
                          orchestrates the lives of the people around her, \
