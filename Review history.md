@@ -1,25 +1,25 @@
 Just replace the id in the following link. 
 
-https://review.udacity.com/#!/reviews/428563
+https://review.udacity.com/#!/reviews/872106
 
 ## 2017.7 
 
-| DAte      | Program | project    | ID     | Note     |
-| --------- | ------- | ---------- | ------ | -------- |
-| 2017-7-11 | AIND    | isolation  | 602353 | 3 issues |
-| 2017-7-11 | AIND    | isolation  | 602838 | 4 issues |
-| 2017-7-14 | AIND    | isolation  | 607020 | pass     |
-| 2017-8-21 | AIND    | planning   | 688020 | occupy   |
-| 2017-8-25 | AIND    | HMM        | 698294 | 1 issue  |
-| 2017-8-25 | AIND    | HMM        | 698377 | pass     |
-| 2017-8-29 | RoND    | mapping    | 704820 | pass     |
-| 2017-9-12 | RoND    | kinematics | 731583 | occupy   |
-| 2017-9-13 | RoND    | kinematics | 735907 | pass     |
-| 2017-9-16 | RoND    | perception | 741547 | 2 issues |
-|           |         |            |        |          |
-|           |         |            |        |          |
-|           |         |            |        |          |
-|           |         |            |        |          |
+| DAte       | Program | project       | ID     | Note     |
+| ---------- | ------- | ------------- | ------ | -------- |
+| 2017-7-11  | AIND    | isolation     | 602353 | 3 issues |
+| 2017-7-11  | AIND    | isolation     | 602838 | 4 issues |
+| 2017-7-14  | AIND    | isolation     | 607020 | pass     |
+| 2017-8-21  | AIND    | planning      | 688020 | occupy   |
+| 2017-8-25  | AIND    | HMM           | 698294 | 1 issue  |
+| 2017-8-25  | AIND    | HMM           | 698377 | pass     |
+| 2017-8-29  | RoND    | mapping       | 704820 | pass     |
+| 2017-9-12  | RoND    | kinematics    | 731583 | occupy   |
+| 2017-9-13  | RoND    | kinematics    | 735907 | pass     |
+| 2017-9-16  | RoND    | perception    | 741547 | 2 issues |
+| 2017-11-22 | RoND    | deep learning | 872106 | occupy   |
+|            |         |               |        |          |
+|            |         |               |        |          |
+|            |         |               |        |          |
 
 ## 2017.6
 
